@@ -1,1 +1,5 @@
-print(input(), '? Конечно, помню, ведь мы проходили это на прошлом занятии!')
+word = input()
+if word == 'Python':
+    print('Yes')
+else :
+    print('No')
