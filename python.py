@@ -1,8 +1,12 @@
+print('Ты любишь программирование?')
 a = input()
+print('Ты любишь python?')
 b = input()
-c = input()
-
-if a == '1' and b == '2' and c == '3':
-    print('ГОРИ')
-else :
-    print('НЕ ГОРИ')
+if a == 'да' and b == 'да':
+    print('Молодец')
+if a == 'да' and b == 'нет':
+    print('Ну хорошист')
+if a == 'нет' and b == 'да':
+    print('Ну пойдет')
+if a == 'нет' and b == 'нет':
+    print('Ужас')
