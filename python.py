@@ -1,2 +1,5 @@
 word = input()
-print(word * 4)
+if word == 'кот':
+    print('МЯУ')
+else :
+    print('ГАВ')
