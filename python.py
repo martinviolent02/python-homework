@@ -1,9 +1,6 @@
 a = input()
-if a == '5':
-    print('Отлично')
-elif a == '4':
-    print('Хорошо')
-elif a == '3':
-    print('Удовлитворительно')
+b = input()
+if '@' not in a and '@' in b:
+    print('OK')
 else :
-    print('Неудовлетворительно')
+    print('ОШИБКА')
