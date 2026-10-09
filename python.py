@@ -1,2 +1,8 @@
-a = input()
-print(f'Слово {a} имеет длину {len(a)}')
+number = int(input())
+
+if number > 0:
+    print("+")
+elif number < 0:
+    print("−")
+else:
+    print("0")
