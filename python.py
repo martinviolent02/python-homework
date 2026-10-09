@@ -1,3 +1,2 @@
-a = float(input())
-b = float(input())
-print(a+b)
+a = input()
+print(f'Слово {a} имеет длину {len(a)}')
