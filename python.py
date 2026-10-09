@@ -1,2 +1,4 @@
-print('Я изучаю Python')
-print('Это мой первый код')
+word = 'Ура!'
+print(word)
+print(word)
+print(word)
