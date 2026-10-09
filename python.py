@@ -1,2 +1,3 @@
 word = input()
-print('Привет,', word)
+words = input()
+print(word, words)
