@@ -1,4 +1,2 @@
-word = 'Ура!!!'
-print(word)
-print(word)
-print(word)
+word = input()
+print('Привет,', word)
