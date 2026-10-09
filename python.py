@@ -1,5 +1,3 @@
-word = input("")
-word1 = input("")
-word2 = input()
-
-print(f'Билет на "{word}" в "{word1}" на {word2} забронирован')
+a = int(input())
+b = int(input())
+print(a+b)
