@@ -1,8 +1,12 @@
-n = abs(int(input()))
-total = 0
+secret = 99
 
-while n > 0:
-    total += n % 10
-    n //= 10
+while True:
+    guess = int(input())
 
-print(total)
+    if guess < secret:
+        print("БОЛЬШЕ")
+    elif guess > secret:
+        print("МЕНЬШЕ")
+    else:
+        print("УГАДАЛ!")
+        break
