@@ -1,4 +1,5 @@
+text = input()
 n = int(input())
 
-for x in range(n + 1):
-    print(x, end=' ')
+for i in range(1, n + 1):
+    print(f"{i}: {text}")
