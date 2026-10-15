@@ -1,11 +1,7 @@
-numbers = []
-
 while True:
-    n = int(input())
+    text = input()
 
-    if n == 0:
+    if text == "":
         break
 
-    numbers.append(n)
-
-print(*numbers)
+    print(text)
