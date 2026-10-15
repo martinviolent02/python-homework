@@ -1,8 +1,7 @@
-message = input()
+a = int(input())
+b = int(input())
 
-cost = len(message) * 40
+a, b = b, a
 
-rubles = cost // 100
-kopecks = cost % 100
-
-print(f"{rubles} р. {kopecks} коп.")
+print(a)
+print(b)
