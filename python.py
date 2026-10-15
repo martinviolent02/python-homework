@@ -1,11 +1,9 @@
-while True:
-    temp = float(input())
+password = input()
+repeat = input()
 
-    if temp == 0:
-        break
-    elif temp < 15.5:
-        print("ХОЛОДНО")
-    elif temp > 28:
-        print("ЖАРКО")
-    else:
-        print("НОРМАЛЬНО")
+if len(password) < 8:
+    print("Слишком короткий!")
+elif password != repeat:
+    print("Пароли не совпадают!")
+else:
+    print("OK")
