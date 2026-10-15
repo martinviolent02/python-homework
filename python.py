@@ -1,13 +1,11 @@
-while True:
-    password = input()
-    repeat = input()
+total = 0
 
-    if len(password) < 8:
-        print("Слишком короткий!")
-    elif password != repeat:
-        print("Пароли не совпадают!")
-    elif "123" in password:
-        print("Пароль не должен содержать 123!")
-    else:
-        print("OK")
+while True:
+    n = int(input())
+
+    if n == 0:
         break
+
+    total += n
+
+print(total)
