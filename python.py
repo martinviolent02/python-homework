@@ -1,7 +1,10 @@
 n = int(input())
-sum = 0
+sum = 1
 
 for i in range(n):
     number = int(input())
-    sum += number
+
+    if number != 0:
+        sum *= number
+
 print(sum)
