@@ -1,5 +1,11 @@
-n = int(input())
+numbers = []
 
-while n >= 1:
-    print(n)
-    n -= 1
+while True:
+    n = int(input())
+
+    if n == 0:
+        break
+
+    numbers.append(n)
+
+print(*numbers)
