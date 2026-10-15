@@ -1,7 +1,11 @@
 while True:
-    text = input()
+    temp = float(input())
 
-    if text == "":
+    if temp == 0:
         break
-
-    print(text)
+    elif temp < 15.5:
+        print("ХОЛОДНО")
+    elif temp > 28:
+        print("ЖАРКО")
+    else:
+        print("НОРМАЛЬНО")
