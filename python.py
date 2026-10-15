@@ -1,11 +1,10 @@
-total = 0
+n = int(input())
+n = abs(n)
 
-while True:
-    n = int(input())
+count = 0
 
-    if n == 0:
-        break
+while n > 0:
+    n //= 10
+    count += 1
 
-    total += n
-
-print(total)
+print(count)
