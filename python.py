@@ -1,12 +1,4 @@
-secret = 99
+n = int(input())
 
-while True:
-    guess = int(input())
-
-    if guess < secret:
-        print("БОЛЬШЕ")
-    elif guess > secret:
-        print("МЕНЬШЕ")
-    else:
-        print("УГАДАЛ!")
-        break
+for x in range(n + 1):
+    print(x)
