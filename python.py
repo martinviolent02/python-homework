@@ -1,4 +1,8 @@
-days_per_year = int(input())
-hours_per_day = days_per_year*24
-minutes_per_hour = hours_per_day * 60
-print(minutes_per_hour)
+message = input()
+
+cost = len(message) * 40
+
+rubles = cost // 100
+kopecks = cost % 100
+
+print(f"{rubles} р. {kopecks} коп.")
