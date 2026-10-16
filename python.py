@@ -1,12 +1,18 @@
-a = int(input())
-b = int(input())
+total = 0
+count = 0
+result = -1
 
-for i in range(a, b + 1):
-    if i % 3 == 0 and i % 5 == 0:
-        print("FizzBuzz", end=" ")
-    elif i % 3 == 0:
-        print("Fizz", end=" ")
-    elif i % 5 == 0:
-        print("Buzz", end=" ")
-    else:
-        print(i, end=" ")
+while True:
+    n = int(input())
+
+    if n == 0:
+        break
+
+    total += n
+    count += 1
+
+    if total == 10:
+        result = count
+        break
+
+print(result)
