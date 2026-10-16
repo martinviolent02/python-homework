@@ -1,15 +1,15 @@
-n = int(input())
+count = 0
+first_cat = -1
 
-found = False
-
-for i in range(n):
+while True:
     text = input()
 
-    if "кот" in text or "Кот" in text:
-        found = True
+    if text == "СТОП":
         break
 
-if found:
-    print("МЯУ")
-else:
-    print("НЕТ")
+    count += 1
+
+    if first_cat == -1 and ("кот" in text or "Кот" in text):
+        first_cat = count
+
+print(first_cat)
