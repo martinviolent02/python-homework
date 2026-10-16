@@ -1,17 +1,12 @@
-found = False
+n = int(input())
+total = 0
 
-while True:
-    text = input()
+for i in range(n):
+    num = int(input())
 
-    if text == "СТОП":
-        break
+    if num <= 0:
+        continue
 
-    if "пёс" in text or "Пёс" in text:
-        found = False
-    elif "кот" in text or "Кот" in text:
-        found = True
+    total += num
 
-if found:
-    print("МЯУ")
-else:
-    print("НЕТ")
+print(total)
