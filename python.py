@@ -1,12 +1,17 @@
-n = int(input())
 total = 0
+count = 0
 
-for i in range(n):
-    num = int(input())
+while True:
+    n = int(input())
 
-    if num <= 0:
-        continue
+    if n == 0:
+        print("ОК")
+        break
 
-    total += num
+    total += n
+    count += 1
 
-print(total)
+    if total > 100:
+        print("СТОП")
+        print(count)
+        break
