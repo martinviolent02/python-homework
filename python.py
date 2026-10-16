@@ -1,9 +1,17 @@
-n = int(input())
+found = False
 
-for i in range(n):
+while True:
     text = input()
 
-    if "плохо" in text:
-        continue
+    if text == "СТОП":
+        break
 
-    print(text)
+    if "пёс" in text or "Пёс" in text:
+        found = False
+    elif "кот" in text or "Кот" in text:
+        found = True
+
+if found:
+    print("МЯУ")
+else:
+    print("НЕТ")
