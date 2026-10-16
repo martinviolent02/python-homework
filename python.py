@@ -1,12 +1,13 @@
 n = int(input())
-sum = 0
+found = False
 
 for i in range(n):
-    number = int(input())
+    text = input()
 
-    if i % 2 == 0:
-        sum += number
-    else:
-        sum -= number
+    if "кот" in text or "Кот" in text:
+        found = True
 
-print(sum)
+if found:
+    print("МЯУ")
+else:
+    print("НЕТ")
