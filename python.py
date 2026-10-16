@@ -1,4 +1,5 @@
 count = 0
+cat_count = 0
 first_cat = -1
 
 while True:
@@ -9,7 +10,11 @@ while True:
 
     count += 1
 
-    if first_cat == -1 and ("кот" in text or "Кот" in text):
-        first_cat = count
+    if "кот" in text or "Кот" in text:
+        cat_count += 1
 
+        if first_cat == -1:
+            first_cat = count
+
+print(cat_count)
 print(first_cat)
