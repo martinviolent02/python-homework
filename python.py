@@ -1,4 +1,5 @@
 n = int(input())
+
 found = False
 
 for i in range(n):
@@ -6,6 +7,7 @@ for i in range(n):
 
     if "кот" in text or "Кот" in text:
         found = True
+        break
 
 if found:
     print("МЯУ")
