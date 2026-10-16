@@ -1,18 +1,9 @@
-total = 0
-count = 0
-result = -1
+n = int(input())
 
-while True:
-    n = int(input())
+for i in range(n):
+    text = input()
 
-    if n == 0:
-        break
+    if "плохо" in text:
+        continue
 
-    total += n
-    count += 1
-
-    if total == 10:
-        result = count
-        break
-
-print(result)
+    print(text)
