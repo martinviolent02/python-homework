@@ -1,20 +1,12 @@
-count = 0
-cat_count = 0
-first_cat = -1
+a = int(input())
+b = int(input())
 
-while True:
-    text = input()
-
-    if text == "СТОП":
-        break
-
-    count += 1
-
-    if "кот" in text or "Кот" in text:
-        cat_count += 1
-
-        if first_cat == -1:
-            first_cat = count
-
-print(cat_count)
-print(first_cat)
+for i in range(a, b + 1):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz", end=" ")
+    elif i % 3 == 0:
+        print("Fizz", end=" ")
+    elif i % 5 == 0:
+        print("Buzz", end=" ")
+    else:
+        print(i, end=" ")
