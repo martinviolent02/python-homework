@@ -1,20 +1,16 @@
 m = int(input())
-english = set()
+library = set()
 
 for i in range(m):
-    name = input()
-    english.add(name)
+    book = input()
+    library.add(book)
 
 n = int(input())
-german = set()
 
 for i in range(n):
-    name = input()
-    german.add(name)
+    book = input()
 
-result = english ^ german
-
-if result:
-    print(len(result))
-else:
-    print("NO")
+    if book in library:
+        print("YES")
+    else:
+        print("NO")
