@@ -1,17 +1,8 @@
-total = 0
-count = 0
+n = int(input())
+words = set()
 
-while True:
-    n = int(input())
+for i in range(n):
+    word = input()
+    words.add(word)
 
-    if n == 0:
-        print("ОК")
-        break
-
-    total += n
-    count += 1
-
-    if total > 100:
-        print("СТОП")
-        print(count)
-        break
+print(len(words))
