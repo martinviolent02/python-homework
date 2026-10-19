@@ -1,25 +1,20 @@
-first = set()
-second = set()
+m = int(input())
+english = set()
 
-while True:
-    num = input()
+for i in range(m):
+    name = input()
+    english.add(name)
 
-    if num == "":
-        break
+n = int(input())
+german = set()
 
-    first.add(num)
+for i in range(n):
+    name = input()
+    german.add(name)
 
-while True:
-    num = input()
-
-    if num == "":
-        break
-
-    second.add(num)
-
-result = first & second
+result = english ^ german
 
 if result:
-    print(*result)
+    print(len(result))
 else:
-    print("EMPTY")
+    print("NO")
