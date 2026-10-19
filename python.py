@@ -1,16 +1,18 @@
 m = int(input())
-library = set()
+common = None
 
 for i in range(m):
-    book = input()
-    library.add(book)
+    k = int(input())
+    students = set()
 
-n = int(input())
+    for j in range(k):
+        name = input()
+        students.add(name)
 
-for i in range(n):
-    book = input()
-
-    if book in library:
-        print("YES")
+    if common is None:
+        common = students
     else:
-        print("NO")
+        common = common & students
+
+for name in common:
+    print(name)
