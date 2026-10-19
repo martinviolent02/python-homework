@@ -1,13 +1,25 @@
-n = int(input())
-cities = set()
+first = set()
+second = set()
 
-for i in range(n):
-    city = input()
-    cities.add(city)
+while True:
+    num = input()
 
-new_city = input()
+    if num == "":
+        break
 
-if new_city in cities:
-    print("TRY ANOTHER")
+    first.add(num)
+
+while True:
+    num = input()
+
+    if num == "":
+        break
+
+    second.add(num)
+
+result = first & second
+
+if result:
+    print(*result)
 else:
-    print("OK")
+    print("EMPTY")
