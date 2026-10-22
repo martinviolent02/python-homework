@@ -4,6 +4,9 @@ numbers = []
 
 for i in range(n):
     num = int(input())
-    numbers.append(num * 3)
+    numbers.append(num)
 
-print(*numbers)
+p = int(input())
+q = int(input())
+
+print(sum(numbers[p:q + 1]))
