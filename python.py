@@ -1,5 +1,8 @@
 
 word = input()
+n = int(input())
 
-for letter in word:
-    print(letter)
+if n >= 1 and n <= len(word):
+    print(word[n - 1])
+else:
+    print('ОШИБКА')
