@@ -1,9 +1,14 @@
 
 n = int(input())
-
-a = 1
-b = 1
+numbers = []
 
 for i in range(n):
-    print(a)
-    a, b = b, a + b
+    numbers.append(int(input()))
+
+for i in range(n):
+    for j in range(n - 1):
+        if numbers[j] > numbers[j + 1]:
+            numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
+
+for num in numbers:
+    print(num)
