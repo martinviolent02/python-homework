@@ -1,12 +1,20 @@
 
 n = int(input())
-words = []
+numbers = []
 
 for i in range(n):
-    word = input()
-    words.append(word)
+    num = int(input())
+    numbers.append(num)
 
-words.sort(key=lambda word: (len(word), word))
+last = numbers[-1]
+found = False
 
-for word in words:
-    print(word)
+for i in range(n - 1):
+    for j in range(i + 1, n - 1):
+        if numbers[i] * numbers[j] == last:
+            found = True
+
+if found:
+    print("ДА")
+else:
+    print("НЕТ")
