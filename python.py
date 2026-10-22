@@ -1,4 +1,7 @@
 
 text = input()
 
-print(text[:3], text[-3:])
+if text.startswith('Не') or text.startswith('не'):
+    text = text[2:]
+
+print(text.strip())
