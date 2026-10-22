@@ -1,8 +1,8 @@
 
-word = input()
-n = int(input())
+text = input()
+codes = []
 
-if n >= 1 and n <= len(word):
-    print(word[n - 1])
-else:
-    print('ОШИБКА')
+for letter in text:
+    codes.append(str(ord(letter)))
+
+print(', '.join(codes))
