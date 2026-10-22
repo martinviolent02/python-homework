@@ -1,11 +1,9 @@
 
-name = input()
+n = int(input())
+words = []
 
-allowed = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_'
+for i in range(n):
+    word = input()
+    words.append(word)
 
-for symbol in name:
-    if symbol not in allowed:
-        print('Неверный символ:', symbol)
-        break
-else:
-    print('OK')
+print(*words)
