@@ -1,10 +1,12 @@
 
 n = int(input())
+people = []
 
 for i in range(n):
-    a, b = map(int, input().split())
+    surname, height = input().split()
+    people.append((surname, int(height)))
 
-    if a > b:
-        a, b = b, a
+people.sort(key=lambda person: person[1], reverse=True)
 
-    print(a, b)
+for surname, height in people:
+    print(surname, height)
