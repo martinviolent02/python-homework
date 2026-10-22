@@ -1,12 +1,10 @@
 
 n = int(input())
-people = []
+words = []
 
 for i in range(n):
-    surname, height = input().split()
-    people.append((surname, int(height)))
+    word = input()
+    words.append((len(word), word))
 
-people.sort(key=lambda person: person[1], reverse=True)
-
-for surname, height in people:
-    print(surname, height)
+for item in words:
+    print(item)
