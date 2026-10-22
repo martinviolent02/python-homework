@@ -1,3 +1,8 @@
 
+n = int(input())
 text = input()
-print(text[::2])
+
+if len(text) > n:
+    text = text[:n - 3] + '...'
+
+print(text)
