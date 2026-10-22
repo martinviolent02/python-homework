@@ -1,12 +1,14 @@
 
 n = int(input())
-numbers = []
+lines = []
 
 for i in range(n):
-    num = int(input())
-    numbers.append(num)
+    line = input()
+    lines.append(line)
 
-p = int(input())
-q = int(input())
+word1 = input()
+word2 = input()
 
-print(sum(numbers[p:q + 1]))
+for line in lines:
+    if word1 in line and word2 in line:
+        print(line)
