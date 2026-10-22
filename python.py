@@ -1,8 +1,7 @@
 
-n = int(input())
 text = input()
 
-if len(text) > n:
-    text = text[:n - 3] + '...'
-
-print(text)
+if text == text[::-1]:
+    print('ДА')
+else:
+    print('НЕТ')
