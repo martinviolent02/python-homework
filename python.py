@@ -1,3 +1,4 @@
 
 text = input()
-print(text[::-1])
+
+print(text[:3], text[-3:])
