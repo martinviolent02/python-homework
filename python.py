@@ -1,9 +1,13 @@
 
 n = int(input())
-words = []
+lines = []
 
 for i in range(n):
-    word = input()
-    words.append(word)
+    text = input()
+    lines.append(text)
 
-print(*words)
+query = input()
+
+for text in lines:
+    if query in text:
+        print(text)
