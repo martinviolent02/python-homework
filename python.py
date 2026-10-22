@@ -1,10 +1,7 @@
 
-a = set(map(int, input().split()))
-b = set(map(int, input().split()))
+word = input()
 
-result = a ^ b
-
-if result:
-    print(*sorted(result))
+if len(word) >= 5:
+    print(word[4])
 else:
-    print('EMPTY')
+    print('НЕТ')
