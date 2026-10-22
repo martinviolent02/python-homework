@@ -1,11 +1,10 @@
 
-previous = input()
+text = input()
+vowels = 'аеёиоуыэюя'
+count = 0
 
-while True:
-    word = input()
+for letter in text:
+    if letter in vowels:
+        count += 1
 
-    if word[0] != previous[-1]:
-        print(word)
-        break
-
-    previous = word
+print(count)
