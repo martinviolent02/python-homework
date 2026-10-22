@@ -1,11 +1,10 @@
 
 n = int(input())
-numbers = []
 
 for i in range(n):
-    num = int(input())
-    numbers.append(num)
+    a, b = map(int, input().split())
 
-unique_numbers = set(numbers)
+    if a > b:
+        a, b = b, a
 
-print(len(unique_numbers))
+    print(a, b)
