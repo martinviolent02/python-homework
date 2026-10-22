@@ -1,15 +1,16 @@
 
-word1 = input()
-word2 = input()
+text = input()
 
-bulls = 0
-cows = 0
+count = 1
+max_count = 1
 
-for i in range(len(word1)):
-    if word1[i] == word2[i]:
-        bulls += 1
-    elif word1[i] in word2:
-        cows += 1
+for i in range(1, len(text)):
+    if text[i] == text[i - 1]:
+        count += 1
+    else:
+        count = 1
 
-print('Быки:', bulls)
-print('Коровы:', cows)
+    if count > max_count:
+        max_count = count
+
+print(max_count)
