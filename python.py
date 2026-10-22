@@ -1,12 +1,11 @@
 
-n = int(input())
+name = input()
 
-for i in range(n):
-    text = input()
+allowed = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_'
 
-    if text.startswith('####'):
-        continue
-    elif text.startswith('%%'):
-        print(text[2:])
-    else:
-        print(text)
+for symbol in name:
+    if symbol not in allowed:
+        print('Неверный символ:', symbol)
+        break
+else:
+    print('OK')
