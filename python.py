@@ -1,15 +1,10 @@
 
-white_list = []
+n = int(input())
+letters = {}
 
-while True:
-    word = input()
-    if word == "":
-        break
-    white_list.append(word)
+for i in range(n):
+    position, letter = input().split()
+    letters[int(position)] = letter
 
-while True:
-    query = input()
-    if query == "":
-        break
-    if query in white_list:
-        print(query)
+for i in range(1, n + 1):
+    print(letters[i], end="")
