@@ -1,20 +1,16 @@
 
 n = int(input())
-numbers = []
+students = []
 
 for i in range(n):
-    num = int(input())
-    numbers.append(num)
+    surname, grade = input().split()
+    students.append((surname, int(grade)))
 
-last = numbers[-1]
-found = False
+for surname, grade in students:
+    print(surname, grade)
 
-for i in range(n - 1):
-    for j in range(i + 1, n - 1):
-        if numbers[i] * numbers[j] == last:
-            found = True
+print()
 
-if found:
-    print("ДА")
-else:
-    print("НЕТ")
+for surname, grade in students:
+    if grade == 4 or grade == 5:
+        print(surname, grade)
