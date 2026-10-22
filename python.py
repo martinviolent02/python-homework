@@ -1,13 +1,10 @@
 
 n = int(input())
-lines = []
+numbers = []
 
 for i in range(n):
-    text = input()
-    lines.append(text)
+    num = int(input())
+    numbers.append(num)
 
-query = input()
-
-for text in lines:
-    if query in text:
-        print(text)
+for i in range(n - 1):
+    print(numbers[i] + numbers[i + 1], end=' ')
