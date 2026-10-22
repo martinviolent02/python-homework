@@ -1,14 +1,23 @@
+
+m = int(input())
+products = []
+
+for i in range(m):
+    product = input()
+    products.append(product)
+
 n = int(input())
-names = []
 
 for i in range(n):
-    name = input()
-    names.append(name)
+    recipe = input().split()
+    name = recipe[0]
+    ingredients = recipe[1:]
 
-count = 0
+    can_cook = True
 
-for name in names:
-    if names.count(name) > 1:
-        count += 1
+    for ingredient in ingredients:
+        if ingredient not in products:
+            can_cook = False
 
-print(count)
+    if can_cook:
+        print(name)
