@@ -1,12 +1,9 @@
 
 n = int(input())
-words = []
+
+a = 1
+b = 1
 
 for i in range(n):
-    word = input()
-    words.append(word)
-
-words = sorted(words)
-
-for word in words:
-    print(word)
+    print(a)
+    a, b = b, a + b
