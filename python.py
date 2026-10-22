@@ -1,7 +1,7 @@
 
 word = input()
 
-if len(word) >= 5:
-    print(word[4])
+if word[0] == 'а':
+    print('ДА')
 else:
     print('НЕТ')
