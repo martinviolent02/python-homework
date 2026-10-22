@@ -1,16 +1,12 @@
 
-text = input()
+n = int(input())
 
-count = 1
-max_count = 1
+for i in range(n):
+    text = input()
 
-for i in range(1, len(text)):
-    if text[i] == text[i - 1]:
-        count += 1
+    if text.startswith('####'):
+        continue
+    elif text.startswith('%%'):
+        print(text[2:])
     else:
-        count = 1
-
-    if count > max_count:
-        max_count = count
-
-print(max_count)
+        print(text)
