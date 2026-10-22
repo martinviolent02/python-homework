@@ -1,7 +1,15 @@
 
-text = input()
+word1 = input()
+word2 = input()
 
-if text == text[::-1]:
-    print('ДА')
-else:
-    print('НЕТ')
+bulls = 0
+cows = 0
+
+for i in range(len(word1)):
+    if word1[i] == word2[i]:
+        bulls += 1
+    elif word1[i] in word2:
+        cows += 1
+
+print('Быки:', bulls)
+print('Коровы:', cows)
