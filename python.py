@@ -1,18 +1,14 @@
-m = int(input())
-common = None
+n = int(input())
+names = []
 
-for i in range(m):
-    k = int(input())
-    students = set()
+for i in range(n):
+    name = input()
+    names.append(name)
 
-    for j in range(k):
-        name = input()
-        students.add(name)
+count = 0
 
-    if common is None:
-        common = students
-    else:
-        common = common & students
+for name in names:
+    if names.count(name) > 1:
+        count += 1
 
-for name in common:
-    print(name)
+print(count)
