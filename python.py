@@ -1,10 +1,9 @@
 
 n = int(input())
-words = []
+numbers = []
 
 for i in range(n):
-    word = input()
-    words.append(word)
+    num = int(input())
+    numbers.append(num * 3)
 
-for word in words[::-1]:
-    print(word)
+print(*numbers)
