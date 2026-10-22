@@ -1,8 +1,11 @@
 
-text = input()
-codes = []
+previous = input()
 
-for letter in text:
-    codes.append(str(ord(letter)))
+while True:
+    word = input()
 
-print(', '.join(codes))
+    if word[0] != previous[-1]:
+        print(word)
+        break
+
+    previous = word
