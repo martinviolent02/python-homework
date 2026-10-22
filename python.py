@@ -3,12 +3,9 @@ n = int(input())
 numbers = []
 
 for i in range(n):
-    numbers.append(int(input()))
+    num = int(input())
+    numbers.append(num)
 
-for i in range(n):
-    for j in range(n - 1):
-        if numbers[j] > numbers[j + 1]:
-            numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
+unique_numbers = set(numbers)
 
-for num in numbers:
-    print(num)
+print(len(unique_numbers))
