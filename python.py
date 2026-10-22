@@ -1,23 +1,20 @@
 
 m = int(input())
-products = []
+dishes = []
 
 for i in range(m):
-    product = input()
-    products.append(product)
+    dish = input()
+    dishes.append(dish)
 
 n = int(input())
+cooked = []
 
 for i in range(n):
-    recipe = input().split()
-    name = recipe[0]
-    ingredients = recipe[1:]
+    day = input().split()
 
-    can_cook = True
+    for dish in day:
+        cooked.append(dish)
 
-    for ingredient in ingredients:
-        if ingredient not in products:
-            can_cook = False
-
-    if can_cook:
-        print(name)
+for dish in dishes:
+    if dish not in cooked:
+        print(dish)
