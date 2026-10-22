@@ -1,10 +1,16 @@
 
+shift = int(input())
 text = input()
-vowels = 'аеёиоуыэюя'
-count = 0
+
+alphabet = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
+result = ''
 
 for letter in text:
-    if letter in vowels:
-        count += 1
+    if letter in alphabet:
+        index = alphabet.index(letter)
+        new_index = (index + shift) % len(alphabet)
+        result += alphabet[new_index]
+    else:
+        result += letter
 
-print(count)
+print(result)
