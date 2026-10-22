@@ -1,10 +1,12 @@
 
 n = int(input())
-letters = {}
+words = []
 
 for i in range(n):
-    position, letter = input().split()
-    letters[int(position)] = letter
+    word = input()
+    words.append(word)
 
-for i in range(1, n + 1):
-    print(letters[i], end="")
+words.sort(key=lambda word: (len(word), word))
+
+for word in words:
+    print(word)
