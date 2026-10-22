@@ -1,16 +1,12 @@
 
 n = int(input())
-students = []
+words = []
 
 for i in range(n):
-    surname, grade = input().split()
-    students.append((surname, int(grade)))
+    word = input()
+    words.append(word)
 
-for surname, grade in students:
-    print(surname, grade)
+words = sorted(words)
 
-print()
-
-for surname, grade in students:
-    if grade == 4 or grade == 5:
-        print(surname, grade)
+for word in words:
+    print(word)
